@@ -1,4 +1,5 @@
 # Sales Dashboard
+<img width="1071" height="965" alt="image" src="https://github.com/user-attachments/assets/ad12bbaa-89ba-494c-a354-0e7d5ecbf865" />
 
 A Next.js analytics dashboard for sales data — secured with **Clerk auth** and powered by a **Deepseek AI assistant**.
 
@@ -29,3 +30,13 @@ Open [http://localhost:3000](http://localhost:3000), sign in, and explore the da
 ## Stack
 
 Next.js · Clerk · Recharts · Deepseek · CSV-backed REST API
+
+## How I used AI
+
+I used AI as a development assistant (Cursor) throughout the project lifecycle. AI helped generate implementation options, scaffold components, suggest API structures, and accelerate debugging. However, architectural and product decisions remained my responsibility.
+
+For example, I evaluated authentication approaches and chose Clerk rather than implementing custom authentication. I defined the dashboard architecture as a Next.js monolith, selected the filtering model, and decided how AI-powered insights would be exposed through both automated summaries and a custom question-answer workflow.
+
+During development, I iteratively refined the user experience based on my own requirements. Examples include  limiting date filters to months present in the dataset, and ensuring AI responses included sales representative context so questions such as "Who is the best salesperson?" could be answered correctly.
+
+AI accelerated implementation, but I reviewed outputs, adjusted designs, validated functionality against the dataset, and made final decisions on architecture, data handling, security, and user experience.
